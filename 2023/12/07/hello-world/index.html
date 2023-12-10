@@ -181,7 +181,7 @@
       if (!eleGroup) return
       const cleanedLinks = eleGroup.href.replace(/#post-comment$/, '')
 
-      const res = await fetch(`https://disqus.com/api/3.0/threads/set.json?forum=dont-starve-blog&api_key=KC5pmUXs2rvU6EMqFEOgkyR0wDf0j9N5AFzh3VENnV26KC2JI7hDzeb9jvnrystz&thread:link=${cleanedLinks}`,{
+      const res = await fetch(`https://disqus.com/api/3.0/threads/set.json?forum=dont-starve-blog&api_key=uCdTfuq6QxWbrMCybowrmTpPf5MnN3Km608azbK0ra2rHjSvQpyQkWQd9MEmsWZL&thread:link=${cleanedLinks}`,{
         method: 'GET'
       })
       const result = await res.json()
